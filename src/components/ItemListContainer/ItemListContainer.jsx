@@ -1,30 +1,43 @@
 import { useEffect, useState } from 'react';
-import ItemList from './ItemListContainer';
-
+import './ItemListContainer.scss';
+import pedirDatos from './pedirDatos';
 
 const ItemListContainer = () => {
-  const [items, setItems] = useState([]);
+  const [product, setProductos] = useState([]);
+  console.log(product)
 
   useEffect(() => {
-    // Simular llamada a una API con un retraso de 5 segundos
-    setTimeout(() => {
-      const fetchedItems = [
-        { id: 1, name: 'Product 1', price: 10 },
-        { id: 2, name: 'Product 2', price: 20 },
-        { id: 3, name: 'Product 3', price: 30 },
-      ];
-      setItems(fetchedItems);
-    }, 2000);
+    pedirDatos()
+      .then((res) => {
+        setProductos(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
+  const usuarios = [
+    { id: 1, nombre: "Malvina" },
+    { id: 2, nombre: "Ivan" },
+    { id: 3, nombre: "juan" }
+  ];
+  const resultado = usuarios.map(() => "Hola");
+  console.log(resultado);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then((resp) => resp.text())
+      .then((data) => {
+        console.log(data)
+      });
+  },  []);
+  
   return (
-    <div>
-      <h2>Item List</h2>
-      {items.length > 0 ? (
-        <ItemList items={items} />
-      ) : (
-        <p>Loading items...</p>
-      )}
+    <div className="catalogo_contenedor">
+      <h2>Item List Container</h2>
+      <hr />
+      <p>Hola mundo</p>
+     {}
     </div>
   );
 };

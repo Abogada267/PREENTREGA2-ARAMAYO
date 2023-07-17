@@ -11,10 +11,10 @@ const Contenedor = (props) => {
 
     return (
         <div style={estilos}>
-            <h2>Un Titulo</h2>
+                  <h2>Un Titulo</h2>
             <hr />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis, atque sunt assumenda quis, hic officiis aliquam ipsum consequuntur dolores quibusdam aspernatur quam corrupti sequi cum reiciendis, illum quia vel?</p>
-        </div>  // Se agregó el cierre de la etiqueta div
+        </div>  
     );
 };
 

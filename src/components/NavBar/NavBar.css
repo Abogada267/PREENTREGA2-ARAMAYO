@@ -1,5 +1,3 @@
-/* NavBar.css */
-.navBar ul li {
-    color: white;
-    background-color: yellow;
+header .nav ul li a  {
+    text-decoration: white;
 }

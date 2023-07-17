@@ -5,10 +5,10 @@ const NavBar = () => {
     <header>
       <nav className={styles.navBar}>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#">INICIO </a></li>
+          <li><a href="#">ACERCA DE</a></li>
+          <li><a href="#">SERVICIOS</a></li>
+          <li><a href="#"> CONTACTO</a></li>
         </ul>
       </nav>
     </header>

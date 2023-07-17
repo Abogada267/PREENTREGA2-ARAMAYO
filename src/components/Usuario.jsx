@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
- export const Usuario = ({ nombre, edad, rol }) => {
+export const Usuario = ({ nombre, edad, rol }) => {
   return (
     <li>
       <h3>{nombre}</h3>

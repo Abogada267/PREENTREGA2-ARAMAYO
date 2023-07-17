@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #d52020;
 }
 
 @keyframes App-logo-spin {
@@ -38,4 +38,27 @@
   }
 }
 
+body{
+  background-color:white;
+}
 
+header{
+  background-color: rgb(117, 117, 114);
+  font-style:italic;
+  text-align: center;
+  text-decoration-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+
+  
+}
+
+header nav ul li a {
+  text-decoration: white;
+  
+}
+
+.Button {
+  background-color: black;
+}
