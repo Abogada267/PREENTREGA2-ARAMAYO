@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../ItemList/ItemList';
+import './ItemListContainer.css';
 import './ItemListContainer.scss';
 import './pedirDatos';
 import pedirDatos from './pedirDatos';

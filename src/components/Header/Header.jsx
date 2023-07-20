@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Header.css';
 import './Header.scss';
 
 export  const Header = () => {
@@ -12,7 +13,7 @@ export  const Header = () => {
           <Link  className="navBar_link"to="/">Pokeapi</Link> 
         </nav>
       </div>
-      <div className="header__cart" style={{ float: 'right', marginRight: '10px', marginTop: '10px' }}>
+      <div className="header_cart" style={{ float: 'right', marginRight: '10px', marginTop: '10px' }}>
         <img src="https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping-thumbnail.png" alt="Carrito" style={{ width: '50px', height: 'auto' }} />
       </div>
       <div className="header__search" style={{ backgroundColor: 'white', paddingTop: '10px', paddingBottom: '10px', paddingLeft: '30px' }}>
