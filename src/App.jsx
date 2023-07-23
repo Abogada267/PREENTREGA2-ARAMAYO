@@ -1,9 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Brand from './components/Brand';
 import Button from './components/Button.jsx';
 import Clicker from './components/Clicker.jsx';
 import Contenedor from './components/Contenedor.jsx';
+import ExampleCarouselImage from './components/ExampleCarouselImage/ExampleCarouselImage'; // Ajusta la ruta de importación
 import Header from './components/Header/Header';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import NavBar from './components/NavBar/NavBar.jsx';
@@ -25,6 +28,16 @@ const App = () => {
       <div>
         <Button color="black" label="Haz Click y ve las ofertas del día!!!" imgSrc="/bhuo.svg" callback={handleClick} />
         <Header />
+        <Carousel>
+          <Carousel.Item>
+            <ExampleCarouselImage text="Primer slide" />
+            <Carousel.Caption>
+              <h3>Etiqueta del primer slide</h3>
+              <p>Descripción del primer slide.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          {/* Agrega más elementos del carrusel aquí, si es necesario */}
+        </Carousel>
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/" element={<PokeApi />} />
@@ -36,10 +49,12 @@ const App = () => {
         <Brand />
         <ItemListContainer />
         <PokeApi />
+        
       </div>
     </BrowserRouter>
   );
 };
 
 export default App;
+
 

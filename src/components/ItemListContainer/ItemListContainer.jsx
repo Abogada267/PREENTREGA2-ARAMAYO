@@ -25,8 +25,8 @@ const ItemListContainer = () => {
       <hr />
       <p>Hola mundo</p>
       {productos.map((prod) => (
-        <div key={prod.id}> {}
-          <h4>{prod.nombre}</h4>
+        <div key={prod.img}> {}
+          <h4>{prod.img}</h4>
           
         </div>
       ))}
