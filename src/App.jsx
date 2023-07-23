@@ -5,10 +5,11 @@ import Button from './components/Button.jsx';
 import Clicker from './components/Clicker.jsx';
 import Contenedor from './components/Contenedor.jsx';
 import Header from './components/Header/Header';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import NavBar from './components/NavBar/NavBar.jsx';
 import PokeApi from './components/PokeApi.jsx';
 import Usuario from './components/Usuario.jsx';
+import './components/variables/_general.scss';
 
 const handleClick = () => {
   console.log('Botón clickeado');
