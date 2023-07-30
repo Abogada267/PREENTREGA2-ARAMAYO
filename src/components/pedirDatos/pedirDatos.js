@@ -1,4 +1,4 @@
-import MOCK_DATA from '../ItemListContainer/MOCK_DATA.js';
+/* eslint-disable no-undef */
 
 export const pedirDatos = () => {
   return new Promise((resolve) => {

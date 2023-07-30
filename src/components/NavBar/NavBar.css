@@ -1,3 +1,30 @@
-header .nav ul li a  {
-    text-decoration: white;
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    background-color: rgba(31, 24, 17, 0.492);
+    }
+
+.navbar-logo {
+    justify-self: start;
+    background-color: rgba(61, 61, 206, 0.735);
+    /* Cambia el color de fondo a azul marino suave */
+    margin-left: 20px;
+    color: rgb(223, 215, 240);
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.seeCarrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 4vh;
+    cursor: pointer;
+    text-decoration: none;
 }

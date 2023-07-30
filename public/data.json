@@ -1,0 +1,28 @@
+[
+    {
+        "id":1,
+        "name": "confeccion de demandas",
+        "author": "m",
+        "price": 4100,
+        "img": "./src/assets/img/1.jpeg",
+        "quanty":1
+    },
+    {
+        "id":2,
+        "name": "contestacion de demandas",
+        "author": "m",
+        "price": 4100,
+        "img": "./src/assets/img/2.jpeg",
+        "quanty":1
+    },
+    {
+        "id":3,
+        "name": "consulta telefonica",
+        "author": "m",
+        "price": 5100,
+        "img": "./src/assets/img/3.jpeg",
+        "quanty":1
+    }
+     
+
+]

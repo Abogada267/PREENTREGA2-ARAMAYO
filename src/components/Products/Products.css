@@ -1,0 +1,57 @@
+/* Estilo para el contenedor de las tarjetas de producto */
+.product-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px;
+    text-align: center;
+}
+
+/* Estilo para cada tarjeta de producto */
+.product-card {
+    margin: 10px;
+    /* Reducimos el margen para que haya más espacio entre las tarjetas */
+    max-width: 250px;
+    /* Ajusta el ancho máximo de cada tarjeta de producto */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    /* Hacemos que las tarjetas se ajusten al ancho disponible y tengan un ancho máximo de 200px */
+}
+
+/* Resto de estilos se mantienen igual */
+
+.product-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+}
+
+.product-card h4 {
+    margin-top: 5px;
+    color: #888;
+}
+
+.product-card button {
+    margin-top: 10px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: aqua;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+}
+
+.product-card button:hover {
+    opacity: 0.7;
+}
